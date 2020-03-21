@@ -1,0 +1,32 @@
+.selectServing {
+  font-family: "Lato";
+
+  > p {
+    font-size: 12px;
+    line-height: 1.33;
+    color: #434b56;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      > svg {
+        width: 50px;
+        height: 56px;
+
+        border-radius: 8px;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

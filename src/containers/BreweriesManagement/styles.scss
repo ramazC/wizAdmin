@@ -1,0 +1,419 @@
+.breweriesManagement {
+  font-family: "Lato";
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__search {
+    margin: 50px 0 33px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.33;
+      color: #434b56;
+    }
+
+    &__filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__button {
+        border: solid 2px #5c9e68;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+        width: 140px;
+        height: 36px;
+        padding: 3px 0;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        color: #5c9e68;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__table {
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 35px 32px 7px 28px;
+    box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+
+    &__header {
+      background-color: rgba(92, 158, 104, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15px 18px 15px;
+      position: relative;
+
+      > p {
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #434b56;
+        text-align: left;
+      }
+
+      > p:first-child {
+        width: 5%;
+        text-align: center;
+      }
+
+      p:nth-child(2) {
+        width: 15%;
+      }
+
+      p:nth-child(3) {
+        width: 35%;
+      }
+
+      p:nth-child(4) {
+        width: 30%;
+        text-align: center;
+      }
+
+      p:nth-child(5) {
+        width: 5%;
+        color: #5c9e68;
+      }
+
+      > div {
+        width: 5%;
+      }
+
+      > svg {
+        width: 5%;
+        cursor: pointer;
+
+        &:active {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    // &__body {
+    //   max-height: 380px;
+    //   overflow: hidden;
+    // }
+
+    &__item {
+      height: 77px;
+      border-bottom: 0.5px solid #e6e6e6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15px 18px 15px;
+
+      > div {
+        width: 5%;
+      }
+
+      > svg {
+        cursor: pointer;
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+
+      > p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: #434b56;
+        text-align: left;
+      }
+
+      > span {
+        width: 5%;
+      }
+
+      p:first-child {
+        width: 5%;
+        text-align: center;
+      }
+
+      p:nth-child(2) {
+        width: 15%;
+      }
+
+      p:nth-child(3) {
+        width: 35%;
+      }
+
+      p:nth-child(4) {
+        width: 30%;
+        text-align: center;
+        color: #5c9e68;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+
+      p:nth-child(5) {
+        width: 5%;
+      }
+
+      > svg {
+        width: 5%;
+      }
+    }
+
+    &__footer {
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+      margin-top: -1px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 27px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > ul {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 25px;
+    margin-bottom: 23px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 19px;
+      border: solid 1px #5c9e68;
+      border-radius: 4px;
+      width: 140px;
+      height: 26px;
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      > p {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.29;
+        letter-spacing: 0.4px;
+        color: #5c9e68;
+        margin-bottom: 0px;
+      }
+
+      > svg {
+        height: 16px;
+      }
+    }
+  }
+
+  &__bottom {
+    border-radius: 8px;
+    width: 200px;
+    position: absolute;
+    z-index: 5;
+    animation: fade-in 0.3s ease-out;
+    right: 35px;
+    box-shadow: 0 6px 200px 0 rgba(13, 51, 32, 0.1);
+    top: 50px;
+
+    &__modal {
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      position: relative;
+      transition: all 0.2s linear;
+      z-index: 5;
+      overflow: hidden;
+
+      &__search {
+        background-color: #ffffff;
+        position: relative;
+
+        &__bottom {
+          width: 100%;
+          height: 1px;
+          background-color: #ffffff;
+          margin-top: -1px;
+        }
+
+        > div {
+          background-color: #ffffff;
+
+          > input::placeholder {
+            color: #d0d0da;
+            font-size: 12px;
+          }
+
+          > input {
+            width: -webkit-fill-available;
+            padding-left: 10px;
+            margin: 10px 6px 0 6px;
+            border-radius: 200px;
+            border-width: 0px;
+            font-size: 12px;
+            line-height: 240%;
+            color: #161551;
+            opacity: 0.6;
+            background-color: #f2f2f2;
+            outline: none;
+          }
+
+          > div {
+            box-shadow: none;
+            border-radius: 0px;
+            margin: 5px 0;
+
+            > div {
+              margin: 3px 0;
+              height: 34px;
+              border-width: 0px;
+              display: flex;
+              align-items: center;
+              border-bottom: solid 1px #cccccc;
+              justify-content: space-between;
+              padding: 13px 13px 13px 20px;
+
+              > p {
+                font-size: 14px;
+                line-height: 1.57;
+                color: #434b56;
+                font-family: Lato;
+                margin-bottom: 0px;
+              }
+
+              > svg {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-left: 5px;
+              }
+            }
+
+            > div:hover {
+              background-color: #f2f2f2;
+              // border-left: solid 4px #5c9e68;
+              border-radius: 5px;
+              cursor: pointer;
+
+              .dropdownselect__com__modal__border {
+                width: 3px;
+                height: 100%;
+                background-color: #5c9e68;
+                border-radius: 0px 5px 5px 0px;
+              }
+
+              > p {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__back {
+      transition: all 0.2s linear;
+      //      transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      // background: rgba(0, 0, 0, 0.2);
+      z-index: 3;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.brewerytooltip {
+  max-width: 332px;
+  padding: 28px 20px;
+  border: solid 1px #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(13, 51, 32, 0.03);
+  margin-left: -220px !important;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #434b56;
+      margin-bottom: 0px;
+    }
+
+    > svg {
+      cursor: pointer;
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    > img {
+      margin-top: 13px;
+      height: 71px;
+      width: 32%;
+      object-fit: cover;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px;
+      height: 26px;
+      margin-left: 24px;
+      margin-top: 21px;
+      border-radius: 4px;
+      border: solid 1px #5c9e68;
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      > p {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.29;
+        letter-spacing: 0.4px;
+        color: #5c9e68;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

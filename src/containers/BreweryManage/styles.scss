@@ -1,0 +1,98 @@
+.breweryManage {
+  >p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #434b56;
+    text-align: left;
+  }
+
+  &__search {
+    margin: 50px 0 33px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >p {
+      border: solid 2px #5c9e68;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+      width: 173px;
+      height: 36px;
+      font-size: 18px;
+      background-color: #5c9e68;
+      line-height: 1.17;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2px;
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    &__filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__button {
+        border: solid 2px #5c9e68;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+        width: 140px;
+        height: 36px;
+        padding: 3px 0;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        color: #5c9e68;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 67px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__pagination {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    >ul {
+      margin-bottom: 0px;
+    }
+
+    >div {
+      position: absolute;
+      left: 0;
+      border-radius: 14.5px;
+      background-color: #767676;
+      padding: 3px 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

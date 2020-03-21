@@ -1,0 +1,17 @@
+.main {
+  position: relative;
+  height: calc(100vh - 80px);
+
+  &__body {
+    margin-left: 315px;
+    height: calc(100vh - 80px);
+    position: relative;
+    padding: 50px 80px 30px 45px;
+    overflow-y: scroll;
+    background-color: #f7f8fa;
+
+    >div:first-child {
+      min-height: calc(100vh - 281px);
+    }
+  }
+}

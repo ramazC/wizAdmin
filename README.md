@@ -1,1 +1,2 @@
-# wizAdmin
+# wizadmin
+SakeWiz Admin Screens

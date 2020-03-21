@@ -1,0 +1,176 @@
+.breweryProducts {
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 36px 37px 46px 50px;
+  font-family: "Lato";
+  max-height: 663px;
+
+  >p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #434b56;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    >p {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.33;
+      color: #434b56;
+      margin-bottom: 0px;
+    }
+
+    >svg {
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__button {
+    width: 225px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+    background-color: #5c9e68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.17;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 40px;
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &__table {
+    padding-right: 48px;
+    // overflow-y: scroll;
+    // max-height: 400px;
+
+    &__header {
+      background-color: rgba(92, 158, 104, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 27px 18px 27px;
+      position: relative;
+
+      >p {
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #434b56;
+        text-align: left;
+      }
+
+      >p:first-child {
+        width: 25%;
+      }
+
+      p:nth-child(2) {
+        width: 16%;
+        text-align: center;
+      }
+
+      p:nth-child(3) {
+        width: 20%;
+      }
+
+      p:nth-child(4) {
+        width: 13%;
+        text-align: center;
+      }
+
+      p:nth-child(5) {
+        width: 13%;
+        text-align: center;
+      }
+
+      p:nth-child(6) {
+        width: 13%;
+        text-align: center;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 27px 18px 27px;
+      position: relative;
+
+      &__line {
+        background-color: #e6e6e6;
+        height: 1px;
+        margin-left: 15px;
+      }
+
+      >p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: #434b56;
+        text-align: left;
+      }
+
+      >p:first-child {
+        width: 25%;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #5c9e68;
+        font-weight: bold;
+        // height: 22px;
+      }
+
+      p:nth-child(2) {
+        width: 16%;
+        text-align: center;
+      }
+
+      p:nth-child(3) {
+        width: 20%;
+      }
+
+      p:nth-child(4) {
+        width: 13%;
+        text-align: center;
+      }
+
+      p:nth-child(5) {
+        width: 13%;
+        display: flex;
+        justify-content: center;
+
+        >span {
+          text-align: center;
+          border-radius: 14.5px;
+          background-color: #5c9e68;
+          color: #ffffff;
+          width: 64px;
+          height: 24px;
+        }
+      }
+
+      p:nth-child(6) {
+        width: 13%;
+        text-align: center;
+      }
+    }
+  }
+}

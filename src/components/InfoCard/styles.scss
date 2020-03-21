@@ -1,0 +1,56 @@
+.infoCard {
+  width: 32%;
+  // max-width: 318px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+  cursor: pointer;
+  user-select: none;
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 158, 104, 0.16);
+    margin-right: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__info {
+    p:first-child {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.33;
+      color: #434b56;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+
+    p:nth-child(2) {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.32px;
+      color: #5c9e68;
+      margin-bottom: 8px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    p:nth-child(3) {
+      font-size: 14px;
+      line-height: 1.57;
+      color: #434b56;
+      margin-bottom: 0px;
+      text-align: left;
+      text-transform: uppercase;
+      height: 21px;
+    }
+  }
+}
